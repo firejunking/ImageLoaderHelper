@@ -301,10 +301,6 @@ public class GlideImageLoaderStrategy implements BaseImageLoaderStrategy {
             if (placeHolder != -1) {
                 builder.placeholder(placeHolder);
                 builder.error(placeHolder);
-            } else {
-                // 没有设置,读取默认的占位图
-                builder.placeholder(com.firejun.imageloaderhelper.R.drawable.il_placeholder_default);
-                builder.error(com.firejun.imageloaderhelper.R.drawable.il_placeholder_default);
             }
             builder.diskCacheStrategy(DiskCacheStrategy.SOURCE);
             if (animate != -1) {
